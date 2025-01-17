@@ -46,3 +46,11 @@ function limparCampo() {
     chute = document.querySelector('input');
     chute.value = '';
 }
+
+function reiniciarJogo() {
+    numeroSecreto = gerarNumeroAleatorio();
+    limparCampo();
+    tentativas = 1;
+    exibirMensagemInicial();
+    document.getElementById('reiniciar').setAttribute('disabled', true)
+}
